@@ -78,3 +78,172 @@ footer {
     color: white;
     margin-top: 2rem;
 }
+HTML
+<!-- Messaging Section -->
+<div class="messaging-container">
+  <!-- Contact List -->
+  <div class="contact-list">
+    <div class="contact active">
+      <img src="avatar1.jpg" alt="User Avatar">
+      <span class="contact-name">Ghina</span>
+    </div>
+    <div class="contact">
+      <img src="avatar2.jpg" alt="User Avatar">
+      <span class="contact-name">Kakha</span>
+    </div>
+  </div>
+
+  <!-- Chat Window -->
+  <div class="chat-window">
+    <div class="message received">
+      <p>Hi David! How's Sprint 2 going?</p>
+    </div>
+    <div class="message sent">
+      <p>Hey! Just working on the Messaging UI design.</p>
+    </div>
+    <div class="message-input">
+      <input type="text" placeholder="Type a message...">
+      <button>Send</button>
+    </div>
+  </div>
+</div>
+CSS
+/* Messaging Layout */
+.messaging-container {
+  display: flex;
+  height: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.contact-list {
+  width: 30%;
+  background-color: #f5f5f5;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  transition: background 0.3s;
+}
+
+.contact.active, .contact:hover {
+  background-color: #e0e0ff;
+}
+
+.contact img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.contact-name {
+  font-weight: bold;
+}
+
+.chat-window {
+  width: 70%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #fff;
+  position: relative;
+}
+
+.message {
+  max-width: 60%;
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 15px;
+}
+
+.message.received {
+  background-color: #f1f1f1;
+  align-self: flex-start;
+}
+
+.message.sent {
+  background-color: #d1e7ff;
+  align-self: flex-end;
+}
+
+.message-input {
+  display: flex;
+  gap: 5px;
+  margin-top: auto;
+}
+
+.message-input input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+.message-input button {
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: none;
+  background-color: #4a90e2;
+  color: white;
+  cursor: pointer;
+}
+HTML
+<!-- User Dashboard Profile Section -->
+<div class="user-dashboard">
+  <div class="profile-section">
+    <img src="avatar1.jpg" alt="User Avatar" class="avatar">
+    <h3>David</h3>
+    <div class="stats">
+      <span class="followers">Followers: <span class="badge">128</span></span>
+      <span class="notifications">Notifications: <span class="badge">3</span></span>
+    </div>
+  </div>
+</div>
+CSS
+/* Dashboard / Profile Section */
+.user-dashboard {
+  width: 300px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+}
+
+.profile-section {
+  text-align: center;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.stats {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.badge {
+  background-color: #ff4d4f;
+  color: white;
+  border-radius: 12px;
+  padding: 2px 8px;
+  font-size: 12px;
+  margin-left: 5px;
+}
