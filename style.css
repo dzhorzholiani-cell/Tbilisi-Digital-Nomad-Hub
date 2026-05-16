@@ -679,3 +679,29 @@ footer {
         flex-direction: column;
     }
 }
+
+/* DARK MODE */
+body.dark {
+background: #0f172a;
+color: #e2e8f0;
+}
+
+body.dark .card,
+body.dark .dashboard-card,
+body.dark .profile-card,
+body.dark .provider-card,
+body.dark .event-card,
+body.dark .chat-window,
+body.dark .contact-list {
+background: rgba(30, 41, 59, 0.8);
+color: white;
+}
+
+.dark-btn {
+padding: 10px 14px;
+border-radius: 10px;
+border: none;
+cursor: pointer;
+background: #1e293b;
+color: white;
+}
